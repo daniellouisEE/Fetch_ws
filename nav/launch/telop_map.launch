@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="slam_karto" type="slam_karto" name="slam_karto" output="screen">
+        <remap from="scan" to="base_scan" />
+    </node>
+    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" output="screen" name="teleop_control"/>
+ </launch>
